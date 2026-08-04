@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="180" viewBox="0 0 800 180">
+<defs>
+  <style>
+  .sans { font-family: 'Segoe UI', system-ui, sans-serif; }
+  .mono { font-family: 'Fira Code','Consolas','SFMono-Regular',monospace; }
+
+  @keyframes cardFade { 0% { opacity:0; } 100% { opacity:1; } }
+  #cardBg { animation: cardFade .5s ease-out both; }
+
+  @keyframes headerFade {
+    0% { opacity:0; transform: translateY(-6px); }
+    100% { opacity:1; transform: translateY(0); }
+  }
+  #header { animation: headerFade .5s ease-out .05s both; }
+
+  @keyframes cellPop {
+    0%   { opacity:0; transform: scale(.55) translateY(14px); }
+    60%  { opacity:1; transform: scale(1.06) translateY(-2px); }
+    80%  { transform: scale(.97) translateY(1px); }
+    100% { opacity:1; transform: scale(1) translateY(0); }
+  }
+  .cell { animation: cellPop .7s cubic-bezier(.22,1,.36,1) both; transform-box: fill-box; transform-origin: center; }
+
+  @keyframes medGlowPulse {
+    0%,100% { opacity:.5; }
+    50% { opacity:.95; }
+  }
+  .medGlow { animation: medGlowPulse 2.6s ease-in-out infinite; }
+
+  @keyframes borderGlow {
+    0%,100% { stroke-opacity:.6; }
+    50% { stroke-opacity:1; }
+  }
+  #cardBorder { animation: borderGlow 3.4s ease-in-out infinite; }
+
+  @keyframes shimmerSweep {
+    0%   { transform: translateX(-140px); opacity:0; }
+    6%   { opacity:.9; }
+    22%  { opacity:.9; }
+    30%  { transform: translateX(900px); opacity:0; }
+    100% { transform: translateX(900px); opacity:0; }
+  }
+  .shimmer { animation: shimmerSweep 6s ease-in-out infinite; }
+</style>
+
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#161b22" stop-opacity="0.94"/>
+    <stop offset="100%" stop-color="#0d1117" stop-opacity="0.97"/>
+  </linearGradient>
+
+  <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00f0ff"/>
+    <stop offset="50%" stop-color="#a855f7"/>
+    <stop offset="100%" stop-color="#00f0ff"/>
+  </linearGradient>
+
+  <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#a855f7"/>
+    <stop offset="100%" stop-color="#00f0ff"/>
+  </linearGradient>
+
+  <linearGradient id="shimmerGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="45%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#eafcff" stop-opacity=".5"/>
+    <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+
+  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowStrong" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="6" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <clipPath id="cardClip"><rect x="0" y="0" width="800" height="180" rx="16"/></clipPath>
+</defs>
+
+<g clip-path="url(#cardClip)">
+  <rect id="cardBg" x="0" y="0" width="800" height="180" fill="url(#bgGrad)"/>
+
+  <g opacity="0.05" stroke="#a855f7" stroke-width="0.6">
+    <path d="M0,60 H800 M0,120 H800 M200,0 V180 M400,0 V180 M600,0 V180"/>
+  </g>
+
+  <text id="header" x="24" y="22" class="sans" font-size="13" font-weight="700"
+    letter-spacing="2" fill="url(#titleGrad)">&#127942; ACHIEVEMENTS</text>
+
+  
+  <g class="cell" style="animation-delay:0.15s">
+    <rect x="24.0" y="34" width="176.0" height="132" rx="14" fill="#1a212b" stroke="#00f0ff" stroke-opacity="0.3" stroke-width="1.2"/>
+    <g class="medGlow">
+      <circle cx="112.0" cy="76" r="34" fill="none" stroke="#00f0ff" stroke-width="1.4" opacity="0.4" filter="url(#glow)"/>
+    </g>
+    <circle cx="112.0" cy="76" r="28" fill="#11161d" stroke="#00f0ff" stroke-width="2" filter="url(#glowStrong)"/>
+    <circle cx="112.0" cy="76" r="23" fill="none" stroke="#00f0ff" stroke-opacity="0.35" stroke-width="1"/>
+    <g transform="translate(112.0,76)" stroke="#00f0ff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M-8,-9 L-15,0 L-8,9"/><path d="M8,-9 L15,0 L8,9"/><path d="M3,-11 L-3,11"/></g>
+    <text x="112.0" y="128" text-anchor="middle" class="sans" font-size="12.5" font-weight="700" fill="#e6edf3">Multi-Language Dev</text>
+    <text x="112.0" y="148" text-anchor="middle" class="mono" font-size="9.5" letter-spacing="0.5" fill="#00f0ff">PHP  &#8226;  JS  &#8226;  MySQL</text>
+  </g>
+
+  <g class="cell" style="animation-delay:0.32999999999999996s">
+    <rect x="216.0" y="34" width="176.0" height="132" rx="14" fill="#1a212b" stroke="#ffb703" stroke-opacity="0.3" stroke-width="1.2"/>
+    <g class="medGlow">
+      <circle cx="304.0" cy="76" r="34" fill="none" stroke="#ffb703" stroke-width="1.4" opacity="0.4" filter="url(#glow)"/>
+    </g>
+    <circle cx="304.0" cy="76" r="28" fill="#11161d" stroke="#ffb703" stroke-width="2" filter="url(#glowStrong)"/>
+    <circle cx="304.0" cy="76" r="23" fill="none" stroke="#ffb703" stroke-opacity="0.35" stroke-width="1"/>
+    <g transform="translate(304.0,76)" stroke="#ffb703" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0,-11 L13,-4 L0,3 L-13,-4 Z"/><path d="M-13,3 L0,10 L13,3" stroke-width="2"/><path d="M-13,10 L0,17 L13,10" stroke-width="2" opacity="0.6"/></g>
+    <text x="304.0" y="128" text-anchor="middle" class="sans" font-size="12.5" font-weight="700" fill="#e6edf3">Full-Stack Builder</text>
+    <text x="304.0" y="148" text-anchor="middle" class="mono" font-size="9.5" letter-spacing="0.5" fill="#ffb703">Frontend + Backend</text>
+  </g>
+
+  <g class="cell" style="animation-delay:0.51s">
+    <rect x="408.0" y="34" width="176.0" height="132" rx="14" fill="#1a212b" stroke="#e2e8f0" stroke-opacity="0.3" stroke-width="1.2"/>
+    <g class="medGlow">
+      <circle cx="496.0" cy="76" r="34" fill="none" stroke="#e2e8f0" stroke-width="1.4" opacity="0.4" filter="url(#glow)"/>
+    </g>
+    <circle cx="496.0" cy="76" r="28" fill="#11161d" stroke="#e2e8f0" stroke-width="2" filter="url(#glowStrong)"/>
+    <circle cx="496.0" cy="76" r="23" fill="none" stroke="#e2e8f0" stroke-opacity="0.35" stroke-width="1"/>
+    <g transform="translate(496.0,76)" stroke="#e2e8f0" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0,-14 C-4,-9 -6,-6 -6,-2 C-6,2.5 -3,5.8 0,5.8 C3,5.8 6,2.5 6,-2 C6,-4.3 4.6,-5.9 3.4,-7.1 C3.6,-5.1 2.4,-4 1.5,-4.3 C2.2,-6.9 0.8,-10.3 0,-14 Z" fill="#e2e8f0" fill-opacity="0.25"/></g>
+    <text x="496.0" y="128" text-anchor="middle" class="sans" font-size="12.5" font-weight="700" fill="#e6edf3">Commit Streak Master</text>
+    <text x="496.0" y="148" text-anchor="middle" class="mono" font-size="9.5" letter-spacing="0.5" fill="#e2e8f0">Consistency Wins</text>
+  </g>
+
+  <g class="cell" style="animation-delay:0.6900000000000001s">
+    <rect x="600.0" y="34" width="176.0" height="132" rx="14" fill="#1a212b" stroke="#00f0ff" stroke-opacity="0.3" stroke-width="1.2"/>
+    <g class="medGlow">
+      <circle cx="688.0" cy="76" r="34" fill="none" stroke="#00f0ff" stroke-width="1.4" opacity="0.4" filter="url(#glow)"/>
+    </g>
+    <circle cx="688.0" cy="76" r="28" fill="#11161d" stroke="#00f0ff" stroke-width="2" filter="url(#glowStrong)"/>
+    <circle cx="688.0" cy="76" r="23" fill="none" stroke="#00f0ff" stroke-opacity="0.35" stroke-width="1"/>
+    <g transform="translate(688.0,76)" stroke="#00f0ff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="-9" cy="-9" r="4"/><circle cx="9" cy="-9" r="4"/><circle cx="0" cy="10" r="4"/><path d="M-9,-5 C-9,3 -4,3 0,3 L0,6"/><path d="M9,-5 C9,3 4,3 0,3"/></g>
+    <text x="688.0" y="128" text-anchor="middle" class="sans" font-size="12.5" font-weight="700" fill="#e6edf3">Open Source Contributor</text>
+    <text x="688.0" y="148" text-anchor="middle" class="mono" font-size="9.5" letter-spacing="0.5" fill="#00f0ff">Community Driven</text>
+  </g>
+
+  <rect class="shimmer" x="0" y="0" width="120" height="180" fill="url(#shimmerGrad)" transform="skewX(-18)"/>
+
+  <rect id="cardBorder" x="2" y="2" width="796" height="176" rx="14" fill="none" stroke="url(#borderGrad)" stroke-width="2" filter="url(#glow)"/>
+  <rect x="2" y="2" width="796" height="176" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+</g>
+</svg>
