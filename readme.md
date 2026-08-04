@@ -22,7 +22,7 @@
 <td width="62%" valign="middle">
 
 ### 💻 Featured Projects
-| 🚀 Project | 🔗 Live Demo | 💻 Source Code |
+| 🚀 Project | 🔗 Live Demo |
 |:---|:---:|:---:|
 | ☕ Cafe Web App | <a href="https://aura-roast.vercel.app" target="_blank">Live Site 🌐</a> 
 | 💄 Cosmetics Store | <a href="https://a-r-brands.vercel.app" target="_blank">Live Site 🌐</a> 
