@@ -22,13 +22,11 @@
 <td width="62%" valign="middle">
 
 ### 💻 Featured Projects
-
-| 🚀 Project | 💻 Tech | ⭐ |
+| 🚀 Project | 🔗 Live Demo | 💻 Source Code |
 |:---|:---:|:---:|
-| [💄 A-R Cosmetics Store](https://github.com/RehmanM5996/A-R-Cosmetics) | `HTML` `CSS` `JS` `PHP` `MySQL` | 15 |
-| [🌐 Full-Stack Web App](https://github.com/RehmanM5996_USERNAME) | `JavaScript` `MongoDB` `Node` | 10 |
-| [🎨 Scroll Animation Web](https://github.com/RehmanM5996) | `HTML` `CSS` `JS` | 8 |
-
+| ☕ Cafe Web App | <a href="https://aura-roast.vercel.app" target="_blank">Live Site 🌐</a> 
+| 💄 Cosmetics Store | <a href="https://a-r-brands.vercel.app" target="_blank">Live Site 🌐</a> 
+| 👨‍💻 Personal Portfolio | <a href="https://a-r-portfolio.vercel.app" target="_blank">Live Site 🌐</a> 
 <br/>
 
 > ⚡ *"Building responsive web applications & crafting seamless digital experiences."*
@@ -43,8 +41,23 @@
 
 ### 📊 GitHub Stats & Graphs
 
-<img src="./stats.svg?v=1" alt="GitHub Stats" height="185"/>
-<img src="./langs.svg?v=1" alt="Top Languages" height="185"/>
+<p align="center">
+  <!-- Real Live GitHub Stats -->
+  <a href="https://github.com/RehmanM5996">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RehmanM5996&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
+  </a>
+  <!-- Real Live Top Languages -->
+  <a href="https://github.com/RehmanM5996">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RehmanM5996&layout=compact&theme=tokyonight" />
+  </a>
+</p>
+
+<p align="center">
+  <!-- Real Live Commit Streak -->
+  <a href="https://github.com/RehmanM5996">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=RehmanM5996&theme=tokyonight" alt="GitHub Streak" />
+  </a>
+</p>
 
 <br/><br/>
 
