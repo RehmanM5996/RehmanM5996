@@ -98,20 +98,19 @@
 </div>
 
 <p align="center">
-  <!-- Live GitHub Stats -->
+  <!-- Real Live GitHub Stats -->
   <a href="https://github.com/RehmanM5996">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RehmanM5996&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RehmanM5996&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&v=1" />
   </a>
-  
-  <!-- Live Top Languages -->
+  <!-- Real Live Top Languages -->
   <a href="https://github.com/RehmanM5996">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RehmanM5996&layout=compact&theme=tokyonight" />
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RehmanM5996&layout=compact&theme=tokyonight&v=1" />
   </a>
 </p>
 
 <p align="center">
-  <!-- Live Commit Streak -->
+  <!-- Real Live Commit Streak -->
   <a href="https://github.com/RehmanM5996">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=RehmanM5996&theme=tokyonight" alt="GitHub Streak" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=RehmanM5996&theme=tokyonight&cache=false" alt="GitHub Streak" />
   </a>
 </p>
