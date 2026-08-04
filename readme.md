@@ -25,9 +25,9 @@
 
 | 🚀 Project | 💻 Tech | ⭐ |
 |:---|:---:|:---:|
-| [💄 A-R Cosmetics Store](https://github.com/RehmanM5996/A-R-Cosmetics) | `HTML` `CSS` `JS` `PHP` `MySQL` | 15 |
-| [🌐 Full-Stack Web App](https://github.com/RehmanM5996_USERNAME) | `JavaScript` `MongoDB` `Node` | 10 |
-| [🎨 Scroll Animation Web](https://github.com/RehmanM5996) | `HTML` `CSS` `JS` | 8 |
+| [💄 A-R Cosmetics Store](https://a-r-brands.vercel.app/) | `HTML` `CSS` `JS` `PHP` `MySQL` | 15 |
+| [☕ Aura Roast Cafe](https://aura-roast.vercel.app/) | `JavaScript` `MongoDB` `Node` | 10 |
+| [👨‍💻 Personal Portfolio](https://a-r-portfolio.vercel.app/) | `HTML` `CSS` `JS``MongoDB` | 8 |
 
 <br/>
 
