@@ -96,21 +96,3 @@
 *⭐️ Always learning, always building.* ⚡
 
 </div>
-
-<p align="center">
-  <!-- Live Stats (Commits, PRs, Issues, Stars) -->
-  <a href="https://github.com/RehmanM5996">
-    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=RehmanM5996&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-  </a>
-  <!-- Live Top Languages -->
-  <a href="https://github.com/RehmanM5996">
-    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=RehmanM5996&layout=compact&theme=tokyonight" />
-  </a>
-</p>
-
-<p align="center">
-  <!-- Live Commit Streak -->
-  <a href="https://github.com/RehmanM5996">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=RehmanM5996&theme=tokyonight" alt="GitHub Streak" />
-  </a>
-</p>
